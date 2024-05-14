@@ -1,0 +1,123 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+@font-face {
+	font-family: "PrestigeElite";
+	src:
+		local("Prestige Elite Std"),
+		url("fonts/PrestigeElite.otf");
+}
+
+body {
+	font-size: 20px;
+	font-family: PrestigeElite;
+	color: #fff;
+	background-color: #000;
+	word-break: break-word;
+}
+
+a {
+	text-decoration: none;
+	color: #afa;
+}
+
+p {
+	text-align: justify;
+}
+
+.main {
+	width: 750px;
+	background-color: #222;
+	margin: auto;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.footer {
+	width: 750px;
+	margin: auto;
+}
+
+.banner {
+	background-color: #444;
+	padding-top: 10px;
+}
+
+.bannerimgcontainer {
+	width: 0;
+	height: 0;
+}
+
+.bannerimg {
+	position: relative;
+	top: 11px;
+	left: 21px;
+	-webkit-transform: rotate(0deg) scale(2);
+}
+
+.bannerimg:hover {
+	-webkit-transform: rotate(0deg) scale(2);
+	-webkit-animation: bannerimgrotation 0.4s ease-in-out;
+}
+
+@-webkit-keyframes bannerimgrotation {
+	0% {
+		-webkit-transform: rotate(-16deg) scale(2);
+	}
+	33% {
+		-webkit-transform: rotate(14deg) scale(2);
+	}
+	66% {
+		-webkit-transform: rotate(-10deg) scale(2);
+	}
+	100% {
+		-webkit-transform: rotate(0deg) scale(2);
+	}
+}
+
+.icon {
+	height: 100px;
+}
+
+.thumbnails {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.thumbcontainer {
+	width:50%;
+	max-width:50%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	-webkit-transform: rotate(0deg);
+}
+
+.thumbcontainer:hover {
+	-webkit-animation: containerrotation 0.3s ease-in-out;
+}
+
+@-webkit-keyframes containerrotation {
+	0% {
+		-webkit-transform: rotate(-6deg);
+	}
+	33% {
+		-webkit-transform: rotate(4deg);
+	}
+	66% {
+		-webkit-transform: rotate(-2deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+.thumb {
+	width:100%;
+	-webkit-transform: scale(1);
+	-webkit-transition: 0.1s;
+}
+
+.thumb:hover {
+	-webkit-transform: scale(1.1);
+}
